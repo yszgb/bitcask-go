@@ -14,7 +14,11 @@ func OpenDataFile(dirPath string, fileId uint32) (*DataFile, error) {
 	return nil, nil
 }
 
-func (df *DataFile) WriteOffset(buf []byte, offset int64) error {
+func(df *DataFile) ReadLogRecord(offset int64) (*LogRecord, error) {
+	return nil, nil
+}
+
+func (df *DataFile) Write(buf []byte) error {
 	return nil
 }
 
